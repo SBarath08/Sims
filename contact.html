@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SIMS Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        address {
+            margin-top: 20px;
+            font-style: normal;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .down{
+            background-color: #B0C5A4;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+   
+    <section id="contact-info">
+        <h2>SIMS Hospital - Vadapalani</h2>
+        <p>(Near Vadapalani Metro Station)</p>
+        <p>No.1, Jawaharlal Nehru Salai, (100 Feet Road),</p>
+        <p>Vadapalani, Chennai - 600 026.</p>
+        <p>Tamilnadu, India</p>
+        <p>Email: <a href="mailto:enquiry@simshospitals.com">enquiry@simshospitals.com</a></p>
+        <p>Phone: +91 44 2000 2001</p>
+        <p>Emergency Contact: +91 44 2000 2020</p>
+        <p>Careers: Send your CV to <a href="mailto:recruiter@simshospitals.com">recruiter@simshospitals.com</a></p>
+    </section>
+   
+    <section id="contact-form">
+        <h2>How Can We Help?</h2>
+        <form id="contactForm">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+           
+            <label for="email">Your Email *</label>
+            <input type="email" id="email" name="email" required>
+           
+            <label for="phone">Your Phone *</label>
+            <input type="tel" id="phone" name="phone" required>
+           
+            <label for="interest">I'm interested in *</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Appointment">Appointment</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+            </select>
+           
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" required></textarea>
+           
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+   
+    <footer class="down">
+        <p>Follow Us On:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Youtube</a></li>
+        </ul>
+        <address class="down">
+            <strong>VADAPALANI</strong><br>
+            (Next to Vadapalani Metro Station)<br>
+            No.1, Jawaharlal Nehru Salai (100 Feet Road),<br>
+            Vadapalani Chennai – 600 026, Tamilnadu, India<br>
+            <a href="mailto:enquiry@simshospitals.com">enquiry@simshospitals.com</a><br>
+            <a href="tel:+914420002001">+91 44 2000 2001</a><br>
+            <a href="tel:+919677715223">+91 96 7771 5223</a>
+        </address>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Handle form submission, e.g., send data to server
+            // You can add your logic here
+            console.log("Form submitted!");
+        });
+    </script>
+</body>
+</html>
+

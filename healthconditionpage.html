@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Health Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .product p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .buy-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pharmacy Health Condition</h1>
+</header>
+
+<nav>
+    <a href="http://127.0.0.1:5500/masterpage.html">Home</a>
+    <a href="http://127.0.0.1:5500/healthcoditionbuypage.html">Diabetic</a>
+    <a href="http://127.0.0.1:5500/healthcoditionbuypage.html">pain Relief</a>
+    <a href="http://127.0.0.1:5500/healthcoditionbuypage.html">Cardiac</a>
+    <a href="http://127.0.0.1:5500/healthcoditionbuypage.html">Eye care</a>
+</nav>
+
+<div class="container">
+    <!-- BP Monitors -->
+    <div class="product">
+        <img src="Diabetic.png"BP Monitor">
+        <h2>Diabetic</h2>
+        <p>Diabetes have numerous early symptoms, but they’re not always specific. If you have risk factors for diabetes or someone in your family has diabetes.</p>
+       
+    </div>
+
+    <!-- Thermometers -->
+    <div class="product">
+        <img src="pain.png" alt="Thermometer">
+        <h2>pain Relief</h2>
+        <p>Description of the thermometer goes here. This could include features, benefits, etc.</p>
+      
+    </div>
+
+    <!-- Pregnancy Test Kits -->
+    <div class="product">
+        <img src="card.jpg" alt="Pregnancy Test Kit">
+        <h2>Cardiac</h2>
+        <p>Description of the pregnancy test kit goes here. This could include usage instructions, benefits, etc.</p>
+       
+    </div>
+
+    <!-- Weighing Machines -->
+    <div class="product">
+        <img src="eye.jpg" alt="Weighing Machine">
+        <h2>Eye care</h2>
+        <p>Description of the weighing machine goes here. This could include features, benefits, etc.</p>
+        
+    </div>
+</div>
+
+</body>
+</html>
